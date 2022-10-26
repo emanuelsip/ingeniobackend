@@ -1,7 +1,7 @@
 'use strict'
 const express = require('express');
 const app = express();
-
+const cors = require('cors')
 let port = process.env.PORT || 5000
 
 app.get('/',(req,res)=>{
