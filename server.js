@@ -36,10 +36,11 @@ app.use('/api/task',deleteTask)
 //     res.json(req.body.nameTask)
 //   });
 
+let port = process.env.PORT || 5000
 
 app.get('/',(req,res)=>{
     res.end('Api ingenio')
 })
-app.listen(5000,function(){
-    console.log('Prueba del servidor de ingenio');
+app.listen(port,()=>{
+    console.log(`Prueba del servidor de ingenio puert:${port}`);
 })
