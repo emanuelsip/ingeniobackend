@@ -23,7 +23,7 @@ router.post('/create', (req, res) => {
                 "updatedAt": newTask.updatedAt
                 })
             }else{
-              res.json(err.errors['nameTask'].message)
+              res.status(500).json(err.errors['nameTask'].message)
             }
         
           })
