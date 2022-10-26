@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log(`Prueba del servidor de ingenio puert:${port}`);
 })
-
+app.use(cors())
 //dbmongo
 
 /*
